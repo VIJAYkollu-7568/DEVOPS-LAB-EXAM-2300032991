@@ -38,7 +38,7 @@ jobs:
       - name: Build and Push Frontend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./reactexamproject
-          file: ./reactexamproject/frontend.Dockerfile
+          context: ./reactexamapp
+          file: ./reactexamapp/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-labexam-frontend:latest
